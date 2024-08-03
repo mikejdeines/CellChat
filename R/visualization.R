@@ -3021,7 +3021,7 @@ netVisual_chord_gene <- function(object, slot.name = "net", color.use = NULL,
 
   # https://jokergoo.github.io/circlize_book/book/legends.html
   if (show.legend) {
-    lgd <- ComplexHeatmap::Legend(at = names(color.use), type = "grid", legend_gp = grid::gpar(fill = color.use), labels_gp = gpar(fontsize = legend.font.size), title = "Cell State", title_gp = gpar(fontsize = legend.title.font.size, fontface = "bold")
+    lgd <- ComplexHeatmap::Legend(at = names(color.use), type = "grid", legend_gp = grid::gpar(fill = color.use), labels_gp = gpar(fontsize = legend.font.size), title = "Cell State", title_gp = gpar(fontsize = legend.title.font.size, fontface = "bold"))
     ComplexHeatmap::draw(lgd, x = unit(1, "npc")-unit(legend.pos.x, "mm"), y = unit(legend.pos.y, "mm"), just = c("right", "bottom"))
   }
 
